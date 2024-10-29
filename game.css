@@ -1,6 +1,87 @@
-.wrap{
+/* .wrap{
+} */
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+}
+
+.grid {
+    margin: 0px 6vw;
+    width: 88vw;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.grid_bar {
+    /* padding-right: 40px; */
+    width: 9vw;
+    height: 400vw;
+    background: #ff0000;
+    opacity: 10%;
+    list-style: none;
+}
+
+
+
+
+
+.gnb {
+    display: inline-flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    margin: 2vw 0 0 0;
+}
+
+.gnb li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.gnb_right {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 15.1vw;
+    padding: 0;
+    padding-right: 10.4vw;
+}
+
+.logo {
+    width: 2.5vw;
+    margin-left: 6vw;
+}
+
+.navMenu {
+    border: none;
+    background: #fff;
+    font-family: 'SUIT Variable', sans-serif;
+    color: #323232;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+.navMenu:hover {
+    color: #FF5E1F;
+}
+
+button {
+    font-weight: 200;
+}
+
+
+
+/* main */
+
+main{
     display: flex;
     justify-content: center;
+    margin-top: 6vw;
 }
 
 .bg_color {
@@ -40,7 +121,7 @@
     image-rendering: pixelated;
 }
 
-main {
+.moniter {
     position: relative;
     display: flex;
     width: 80vw;
@@ -104,7 +185,7 @@ main {
 } */
 
 .start.fade-out {
-    animation: startOpacity 1s forwards; /* 1초 동안 투명해지는 애니메이션 */
+    animation: startOpacity 1s forwards; 
 }
 
 @keyframes startOpacity{
@@ -119,7 +200,7 @@ main {
 }
 
 .bg_wrap.fade-out {
-    animation: startOpacity 1s forwards; /* 1초 동안 투명해지는 애니메이션 */
+    animation: startOpacity 1s forwards; 
 }
 
 .bg_img {
@@ -269,24 +350,24 @@ main {
     height: 6vw; 
     background-color: transparent;
     top: 0;
-    /* left: 33.5vw;  */
+   
     background: url("./img/character.png") no-repeat;
-    background-size: 24vw 24vw;  /* 스프라이트 시트 크기 (width: 8vw, height: 32vw) */
+    background-size: 24vw 24vw;  
     z-index: 3;
     image-rendering: pixelated;
 
 }
 
 .char[data-direction='right'] {
-    background-position-y: -6vw;  /* 오른쪽을 향한 스프라이트의 y좌표 */
+    background-position-y: -6vw; 
 }
 
 .char[data-direction='up'] {
-    background-position-y: -12vw;  /* 위쪽을 향한 스프라이트의 y좌표 */
+    background-position-y: -12vw; 
 }
 
 .char[data-direction='left'] {
-    background-position-y: -18vw;  /* 왼쪽을 향한 스프라이트의 y좌표 */
+    background-position-y: -18vw; 
 }
 
 .char[data-walking='true'] {
@@ -298,7 +379,7 @@ main {
         background-position-x: 0;
     }
     to {
-        background-position-x: -24vw;  /* 4 프레임 애니메이션에 맞춘 스프라이트 x축 */
+        background-position-x: -24vw;
     }
 }
 
@@ -381,7 +462,7 @@ main {
 }
 
 .endBg.fade-in {
-    animation: EndOpacity 1s forwards; /* 1초 동안 투명해지는 애니메이션 */
+    animation: EndOpacity 1s forwards; 
 }
 
 @keyframes EndOpacity{
@@ -428,7 +509,7 @@ main {
     text-align: center;
     top: 33vw;
     left: 20vw;
-    animation: EndOpacity 7s forwards; /* 1초 동안 투명해지는 애니메이션 */
+    animation: EndOpacity 7s forwards;
 }
 
 .restart{
