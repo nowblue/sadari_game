@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const character = document.querySelector('.char');
     const movechar = document.querySelector('.cap_area')
-    const container = document.querySelector('main');
+    const container = document.querySelector('.moniter');
     const topIconA = document.querySelector('.infoIcon_a');
     const topIconB = document.querySelector('.infoIcon_b');
     const topIconC = document.querySelector('.infoIcon_c');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.bg_wrap').classList.add('fade-out');
                     Ending.style.display = 'block'; 
                 }, 1000);
-            }, 3000);
+            }, 800);
         }
     }
     
