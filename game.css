@@ -232,7 +232,7 @@ main{
 .pole_a {
     position: absolute;
     top: 20vw;
-    left: 2vw;
+    left: 0vw;
     height: 23vw;
     z-index: 4;
     image-rendering: pixelated;
@@ -242,7 +242,7 @@ main{
     display: none;
     position: absolute;
     top: 20vw;
-    left: 2vw;
+    left: 0vw;
     height: 23vw;
     z-index: 4;
     image-rendering: pixelated;
