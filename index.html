@@ -7,103 +7,126 @@
     <title>SADARI_GAME</title>
     <link rel="stylesheet" href="./game.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="wrap">
-        <section class="game1">
-            <div class="bg_color"></div>
-            <header>
-                <!-- 변환되는 걸 고민해봐야함. 태그... -->
-                <section class="top_icon">
+        <!-- <ul class="grid">
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+            <li class="grid_bar"></li>
+        </ul> -->
+        <header>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="https://nowblue.github.io/sadari/"><img src="./img/logo_2.png" alt="" class="logo"></a></li>
+                    <li>
+                        <ul class="gnb_right">
+                            <li><button class="navMenu gnb_1" onclick="location.href='https://nowblue.github.io/sadari/'">Home</button></li>
+                            <li><button class="navMenu gnb_2">Game</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="game1">
+                <div class="bg_color"></div>
+                <article class="top_icon">
                     <img src="./img/infoIcon_b.png" alt="" class="infoIcon_a">
                     <img src="./img/infoIcon_b.png" alt="" class="infoIcon_b">
                     <img src="./img/infoIcon_b.png" alt="" class="infoIcon_c">
-                </section>
-
-            </header>
-            <main>
-                <section class="start">
-                    <div class="start_bg">
-                        <img src="./img/start_bg.png" alt="" class="startBgImg">
-                        <button class="startBtn">START</button>
-                        <p class="startInfo">
-                            게임을 플레이하는 당신은 안전맨이 됩니다!<br/>
-                            안전맨의 임무는 마을 곳곳에 숨은 위험을 찾아내어 신고하는 것이에요.<br/>
-                            <br/>
-                            마을을 둘러보시다가 사고를 유발할 수 있는 위험 요소를 발견하시면,<br/>
-                            스페이스바를 눌러 신고하고 안전한 세상을 만들어주세요!<br/>
-                        </p>
-                        <div class="startBg"></div>
-                    </div>
-                </section>
-                <section class="bg_wrap">
-                    <div class="bg">
-                        <img src="./img/background.png" alt="" class="bg_img">
-                    </div>
-                    <article class="problem">
-                        <div class="building">
-                            <img src="./img/building_a.png" alt="" class="building_a">
-                            <img src="./img/building_b.png" alt="" class="building_b">
-                        </div>
-                        <div class="pole">
-                            <img src="./img/pole_a.png" alt="" class="pole_a">
-                            <img src="./img/pole_b.png" alt="" class="pole_b">
-                        </div>
-                        <div class="sinkhole">
-                            <img src="./img/sinkhole.png" alt="" class="hole">
+                </article>
+                <article class="moniter">
+                    <article class="start">
+                        <div class="start_bg">
+                            <img src="./img/start_bg.png" alt="" class="startBgImg">
+                            <button class="startBtn">START</button>
+                            <p class="startInfo">
+                                게임을 플레이하는 당신은 안전맨이 됩니다!<br />
+                                안전맨의 임무는 마을 곳곳에 숨은 위험을 찾아내어 신고하는 것이에요.<br />
+                                <br />
+                                마을을 둘러보시다가 사고를 유발할 수 있는 위험 요소를 발견하시면,<br />
+                                스페이스바를 눌러 신고하고 안전한 세상을 만들어주세요!<br />
+                            </p>
+                            <div class="startBg"></div>
                         </div>
                     </article>
-                    <article class="trees">
-                        <!-- <img src="./img/tree1.png" alt="" class="tree tree_a"> -->
-                        <img src="./img/tree1.png" alt="" class="tree1 tree_b">
-                        <img src="./img/tree1.png" alt="" class="tree1 tree_c">
-                        <!-- <img src="./img/tree2.png" alt="" class="tree1 tree_d"> -->
-                        <img src="./img/tree2.png" alt="" class="tree1 tree_e">
-                        <img src="./img/tree2.png" alt="" class="tree1 tree_f">
-                        <img src="./img/tree2.png" alt="" class="tree2 tree_g">
-                        <img src="./img/tree2.png" alt="" class="tree2 tree_h">
-                        <img src="./img/tree2.png" alt="" class="tree2 tree_i">
-                        <img src="./img/tree2.png" alt="" class="tree2 tree_j">
-                        <img src="./img/tree2.png" alt="" class="tree2 tree_k">
-                        <img src="./img/tree2.png" alt="" class="tree2 tree_l">
-                    </article>
-                    <!-- <div class="char" data-direction="down" data-walking="false"></div> -->
-
-                    <article class="cap_area">
-                        <div class="char" data-direction="down" data-walking="false"></div>
-                        <div class="caption">
-                            <div class="cap_text">
-                                <p class="cap_spaceB">SPACE BAR</p>
-                                <p class="cap_declar">신고하기</p>
+                    <article class="bg_wrap">
+                        <div class="bg">
+                            <img src="./img/background.png" alt="" class="bg_img">
+                        </div>
+                        <article class="problem">
+                            <div class="building">
+                                <img src="./img/building_a.png" alt="" class="building_a">
+                                <img src="./img/building_b.png" alt="" class="building_b">
                             </div>
-                            <img src="./img/cap_box.png" alt="" class="cap_box">
-                        </div>
-                        <!-- <div class="cap_caution">
+                            <div class="pole">
+                                <img src="./img/pole_a.png" alt="" class="pole_a">
+                                <img src="./img/pole_b.png" alt="" class="pole_b">
+                            </div>
+                            <div class="sinkhole">
+                                <img src="./img/sinkhole.png" alt="" class="hole">
+                            </div>
+                        </article>
+                        <article class="trees">
+                            <!-- <img src="./img/tree1.png" alt="" class="tree tree_a"> -->
+                            <img src="./img/tree1.png" alt="" class="tree1 tree_b">
+                            <img src="./img/tree1.png" alt="" class="tree1 tree_c">
+                            <!-- <img src="./img/tree2.png" alt="" class="tree1 tree_d"> -->
+                            <img src="./img/tree2.png" alt="" class="tree1 tree_e">
+                            <img src="./img/tree2.png" alt="" class="tree1 tree_f">
+                            <img src="./img/tree2.png" alt="" class="tree2 tree_g">
+                            <img src="./img/tree2.png" alt="" class="tree2 tree_h">
+                            <img src="./img/tree2.png" alt="" class="tree2 tree_i">
+                            <img src="./img/tree2.png" alt="" class="tree2 tree_j">
+                            <img src="./img/tree2.png" alt="" class="tree2 tree_k">
+                            <img src="./img/tree2.png" alt="" class="tree2 tree_l">
+                        </article>
+                        <!-- <div class="char" data-direction="down" data-walking="false"></div> -->
+
+                        <article class="cap_area">
+                            <div class="char" data-direction="down" data-walking="false"></div>
+                            <div class="caption">
+                                <div class="cap_text">
+                                    <p class="cap_spaceB">SPACE BAR</p>
+                                    <p class="cap_declar">신고하기</p>
+                                </div>
+                                <img src="./img/cap_box.png" alt="" class="cap_box">
+                            </div>
+                            <!-- <div class="cap_caution">
                         <p class="cautionText">이크! 여기에 위험이 있나?</p>
                         <img src="./img/cap_box.png" alt="" class="cap_box">
                     </div> -->
+                        </article>
                     </article>
-                </section>
-                <section class="ending">
-                    <article class="">
-                        <img src="./img/ending_bg.png" alt="" class="endBg">
-                        <img src="./img/badge.png" alt="" class="badge">
-                        <p class="endInfo">
-                            야호~ 안전한 세상을 만들었어!<br/>
-                            일상 생활 속에서 자주 일어날 수 있는 일들이니<br/>
-                            앞으로도 조심히 주변을 둘러보고 주의하며 다니길 바라!
-                        </p>
-                        <button class="restart">RESTART</button>
+                    <article class="ending">
+                        <article class="">
+                            <img src="./img/ending_bg.png" alt="" class="endBg">
+                            <img src="./img/badge.png" alt="" class="badge">
+                            <p class="endInfo">
+                                야호~ 안전한 세상을 만들었어!<br />
+                                일상 생활 속에서 자주 일어날 수 있는 일들이니<br />
+                                앞으로도 조심히 주변을 둘러보고 주의하며 다니길 바라!
+                            </p>
+                            <button class="restart">RESTART</button>
+                        </article>
                     </article>
-                </section>
-            </main>
-        </section>
+                </article>
+            </section>
 
 
 
-        <section class="game2">
+            <section class="game2">
 
-        </section>
+            </section>
+        </main>
     </div>
     <script src="./game.js"></script>
