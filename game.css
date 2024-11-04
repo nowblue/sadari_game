@@ -4,9 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
+    font-family: 'SUIT Variable', sans-serif;
     margin: 0;
+    color: #323232;
 }
+
 
 .grid {
     margin: 0px 6vw;
@@ -30,24 +33,52 @@ html {
 
 
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-area {
+    position: fixed;
+    top: -6vw;
+    height: 12vw;
+    width: 98vw;
+    z-index: 9;
+    pointer-events: all;
+}
+
+nav {
+    position: fixed;
+    top: 0vw;
+    width: 98vw;
+    transition: top 1s ease-in-out;
+    z-index: 10;
+}
+
 .gnb {
+    position: fixed;
     display: inline-flex;
     width: -webkit-fill-available;
     justify-content: space-between;
-    padding: 0;
+    margin: 0;
     align-items: center;
-    margin: 2vw 0 0 0;
+    padding: 1.5vw 0;
+    background: rgba(255, 255, 255, 0.771);
 }
 
 .gnb li {
     list-style: none;
-    text-decoration: none;
+    /* text-decoration: none; */
+}
+
+.gnb_right li {
+    width: 4.4vw;
+    text-align: center;
 }
 
 .gnb_right {
     display: inline-flex;
     justify-content: space-between;
-    width: 15.1vw;
+    width: 15.5vw;
     padding: 0;
     padding-right: 10.4vw;
 }
@@ -59,19 +90,19 @@ html {
 
 .navMenu {
     border: none;
-    background: #fff;
-    font-family: 'SUIT Variable', sans-serif;
-    color: #323232;
+    background: none;
     font-size: 1.1vw;
     font-weight: 300;
 }
 
 .navMenu:hover {
-    color: #FF5E1F;
+    font-weight: 500;
+    color: #FF5F1F;
 }
 
-button {
+.gnb a {
     font-weight: 200;
+    text-decoration: none;
 }
 
 
@@ -84,10 +115,17 @@ main{
     margin-top: 6vw;
 }
 
+.game1{
+    margin-left: 5vw;
+    margin-top: -2vw;
+}
+
+
 .bg_color {
     position: absolute;
-    width: 79.7vw;
-    height: 53vw;
+    margin: 3.3vw 0 0 4vw;
+    width: 71.7vw;
+    height: 44.4vw;
     background-color: #fff;
     z-index: 0;
     border: 0.16vw solid #3e5174;
@@ -99,33 +137,34 @@ main{
 
 .infoIcon_a{
     position: absolute;
-    top: 1.3vh;
-    left: 77vw;
-    width: 3.5vw;
+    top: 8vw;
+    left: 74vw;
+    width: 3vw;
     image-rendering: pixelated;
 }
 
 .infoIcon_b{
     position: absolute;
-    top: 1.3vh;
-    left: 81vw;
-    width: 3.5vw;
+    top: 8vw;
+    left: 77.5vw;
+    width: 3vw;
     image-rendering: pixelated;
 }
 
 .infoIcon_c{
     position: absolute;
-    top: 1.3vh;
-    left: 85vw;
-    width: 3.5vw;
+    top: 8vw;
+    left: 81vw;
+    width: 3vw;
     image-rendering: pixelated;
 }
 
 .moniter {
+    margin: 3.5vw 0 0 4vw;
     position: relative;
     display: flex;
-    width: 80vw;
-    height: 45vw;
+    width: 82vw;
+    height: 40.5vw;
     top: 4vw;
     overflow: hidden;
 }
@@ -137,7 +176,7 @@ main{
 
 .startBgImg{
     position: absolute;
-    width: 80vw;
+    width: 72vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -146,8 +185,8 @@ main{
     position: absolute;
     font-size: 1.6vw;
     font-family: "Galmuri9", sans-serif;
-    top: 21vw;
-    left: 33vw;
+    top: 18vw;
+    left: 29vw;
     background: #fff;
     width: 14vw;
     height: 4vw;
@@ -164,14 +203,14 @@ main{
 
 .startInfo{
     position: absolute;
-    width: 40vw;
+    width: 36vw;
     font-family: "Galmuri9", sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     color: #000;
     z-index: 3;
     text-align: center;
-    top: 28vw;
-    left: 20vw;
+    top: 25vw;
+    left: 19vw;
 }
 /* 
 .startBg{
@@ -205,7 +244,7 @@ main{
 
 .bg_img {
     position: absolute;
-    width: 80vw;
+    width: 72vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -213,8 +252,8 @@ main{
 .building_a {
     position: absolute;
     top: 2vw;
-    left: 52vw;
-    width: 27vw;
+    left: 44vw;
+    width: 25vw;
     z-index: 2;
     image-rendering: pixelated;
 }
@@ -223,17 +262,17 @@ main{
     display: none;
     position: absolute;
     top: 2vw;
-    left: 52vw;
-    width: 27vw;
+    left: 44vw;
+    width: 25vw;
     z-index: 3;
     image-rendering: pixelated;
 }
 
 .pole_a {
     position: absolute;
-    top: 20vw;
+    top: 18.3vw;
     left: 0vw;
-    height: 23vw;
+    height: 21vw;
     z-index: 4;
     image-rendering: pixelated;
 }
@@ -241,9 +280,9 @@ main{
 .pole_b {
     display: none;
     position: absolute;
-    top: 20vw;
+    top: 18.3vw;
     left: 0vw;
-    height: 23vw;
+    height: 21vw;
     z-index: 4;
     image-rendering: pixelated;
 }
@@ -251,7 +290,7 @@ main{
 
 .hole {
     position: absolute;
-    top: 30vw;
+    top: 27vw;
     left: 30vw;
     width: 8vw;
     z-index: 1;
@@ -277,15 +316,15 @@ main{
 } */
 
 .tree_b{
-    top: 7vw;
+    top: 6vw;
     left: 15vw;
-    width: 12vw;
+    width: 11vw;
 }
 
 .tree_c{
-    top: 7vw;
-    left: 46vw;
-    width: 12vw;
+    top: 6vw;
+    left: 40vw;
+    width: 11vw;
 }
 
 /* .tree_d{
@@ -296,51 +335,51 @@ main{
 } */
 
 .tree_e{
-    top: 18vw;
-    left: 9vw;
-    width: 9vw;
+    top: 17vw;
+    left: 7vw;
+    width: 7vw;
 }
 
 .tree_f{
-    top: 18vw;
-    left:18vw;
-    width: 9vw;
+    top: 17vw;
+    left:15vw;
+    width: 7vw;
 }
 
 .tree_g{
-    top: 35vw;
+    top: 32vw;
     left: 10vw;
-    width: 9vw;
+    width: 7vw;
 }
 
 .tree_h{
-    top: 35vw;
-    left: 20vw;
-    width: 9vw;
+    top: 32vw;
+    left: 18vw;
+    width: 7vw;
 }
 
 .tree_i{
-    top: 35vw;
-    left: 45vw;
-    width: 9vw;
+    top: 32vw;
+    left: 40vw;
+    width: 7vw;
 }
 
 .tree_j{
-    top: 35vw;
-    left: 55vw;
-    width: 9vw;
+    top: 32vw;
+    left: 48vw;
+    width: 7vw;
 }
 
 .tree_k{
-    top: 35vw;
-    left: 65vw;
-    width: 9vw;
+    top: 32vw;
+    left: 56vw;
+    width: 7vw;
 }
 
 .tree_l{
-    top: 35vw;
-    left: 75vw;
-    width: 9vw;
+    top: 32vw;
+    left: 64vw;
+    width: 7vw;
 }
 
 
@@ -411,7 +450,7 @@ main{
     font-family: "Galmuri9", sans-serif;
     /* rgba(255, 255, 255, 0.442) */
     background:  radial-gradient(#ffffffb0 20%, #ffffff0f 80%, transparent 20%);;
-    top: -2.5vw;
+    top: -2vw;
     left: 2.7vw;
     animation: blink 1s ease-in-out infinite;
 }
@@ -420,7 +459,7 @@ main{
     position: absolute;
     font-size: 1.2vw;
     font-family: "Galmuri9", sans-serif;
-    top: -0.7vw;
+    top: 0.4vw;
     left: 2.6vw;
 }
 
@@ -456,7 +495,7 @@ main{
 
 .endBg{
     position: absolute;
-    width: 80vw;
+    width: 72vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -485,15 +524,15 @@ main{
     100%{top: 13vw;} */
 
     /* 0%{top: 12vw;} */
-    0%{top: 10vw;}
-    100%{top: 14vw;}
+    0%{top:7vw;}
+    100%{top: 11vw;}
     /* 100%{top: 12vw;} */
 }
 
 .badge{
     position: absolute;
     top: 12vw;
-    left: 22vw;
+    left: 18vw;
     width: 36vw;
     image-rendering: pixelated;
     animation: badgeFly 1s 0.7s linear infinite alternate;
@@ -507,8 +546,8 @@ main{
     color: #000;
     z-index: 3;
     text-align: center;
-    top: 33vw;
-    left: 20vw;
+    top: 30vw;
+    left: 17vw;
     animation: EndOpacity 7s forwards;
 }
 
@@ -516,8 +555,8 @@ main{
     position: absolute;
     font-size: 1vw;
     font-family: "Galmuri9", sans-serif;
-    top: 4vw;
-    left: 71vw;
+    top: 3.5vw;
+    left: 63vw;
     background: #ffffff00;
     width: 7vw;
     height: 3vw;
