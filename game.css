@@ -30,7 +30,9 @@ html {
 }
 
 
-
+.wrap{
+    background: #FFFDFC;
+}
 
 
 ::-webkit-scrollbar {
@@ -112,11 +114,13 @@ nav {
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
     margin-top: 6vw;
 }
 
 .game1{
-    margin-left: 5vw;
+    margin-left: 10vw;
     margin-top: -2vw;
 }
 
@@ -163,8 +167,8 @@ main{
     margin: 3.5vw 0 0 4vw;
     position: relative;
     display: flex;
-    width: 82vw;
-    height: 40.5vw;
+    width: 72vw;
+    height: 40.4vw;
     top: 4vw;
     overflow: hidden;
 }
@@ -570,4 +574,238 @@ main{
     color: #3767ff;
     background: #fff;
     box-shadow: 0 0 15px #3767ff;
+}
+
+
+
+
+
+
+
+
+/* game2 */
+.game2{
+    margin: 10vw 0 5vw 14vw;
+}
+
+.start2bg{
+    width: 72vw;
+    height: 44.4vw;
+    background: #FF5F1F;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo2{
+    width: 5vw;
+    margin: 6vw 0 3vw 0;
+}
+
+.start-title{
+    color: #fff;
+    font-size: 5.5vw;
+    font-weight: 900;
+}
+.start-info{
+    margin: 4vw 0 3vw 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.45vw;
+    font-weight: 600;
+    line-height: 2.5vw;
+}
+
+.startbtn2{
+    width: 13vw;
+    height: 4.5vw;
+    color: #FF5F1F;
+    background: #fff;
+    border: none;
+    border-radius: 3vw;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.startbtn2:hover{
+    animation: colorchange 1s forwards;
+}
+
+
+@keyframes colorchange{
+    0%{
+        color: #FF5F1F;
+    }
+
+    100%{
+        color: #696969;
+    }
+}
+
+.game2-ing{
+    display: none;
+
+}
+
+.game2-area{
+    width: 72vw;
+    height: 44.4vw;
+    background: #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart{
+    margin: 3vw 0 0 -5vw;
+    width: 23vw;
+    transition: transform 0.3s ease; /* 부드러운 스케일 변화 */
+}
+
+
+.timer {
+    width: 50vw; /* 부모 컨테이너의 너비 */
+    height: 1vw; /* 타이머 바 높이 */
+    background-color: #ffffff;
+    position: relative;
+    margin: 3vw 0 2vw 0; /* 상단 여백 */
+    border: #FF5F1F 0.2vw solid;
+    border-radius: 1vw;
+}
+
+.timerBar {
+    width: 50vw; 
+    height: 1vw; 
+    background-color: #FF5F1F; 
+    position: absolute;
+    transition: width 1s linear;
+    border-radius: 1vw;
+
+}
+
+#digit{
+    position: absolute;
+    padding: 30vw 0 0 23vw;
+    font-size: 3vw;
+    font-weight: 800;
+    color: #FF5F1F;
+}
+
+
+/* .game2-img-area{
+    align-items: center;
+} */
+
+
+.ed1_1{
+    display: none;
+    width: 72vw;
+    height: 44.4vw;
+    background: #FF5F1F;
+
+}
+
+.ed_container{
+    width: 72vw;
+    height: 44.4vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.logo3{
+    position: absolute;
+    margin: 4vw;
+    width: 3vw;
+}
+
+.ed_info{
+    /* margin-top: 5vw; */
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 6vw;
+    text-shadow: 0 0.2vw 0.5vw #00000061;
+}
+
+.font_bold{
+    font-size: 4.5vw;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 0.2vw 0.5vw #00000061;
+}
+
+
+.ending2{
+    display: none;
+    width: 72vw;
+    height: 44.4vw;
+    background: #FF5F1F;
+
+}
+
+.ending_container{
+    width: 72vw;
+    height: 44.4vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.ending_text{
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 6vw;
+    text-shadow: 0 0.2vw 0.5vw #00000061;
+}
+
+.ending_info{
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 200;
+    line-height: 2vw;
+    color: #ffffff;
+}
+
+.countDiv{
+    margin-bottom: 3vw;
+    width: 14vw;
+    height: 4vw;
+    background: #ffffff;
+    color: #FF5F1F;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 300;
+    line-height: 4vw;
+    border-radius: 0.7vw;
+}
+
+.count{
+    color: #FF5F1F;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+/* .fade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0; 
+} */
+
+.restart{
+    background: transparent;
+    border: none;
 }
