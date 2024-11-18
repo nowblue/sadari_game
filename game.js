@@ -245,4 +245,267 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// 타이머 만들기!
 
+
+
+// let enterCount = 0; // Enter 키 누른 횟수
+// let timerRunning = false; // 타이머 동작 여부
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     document.querySelector(".startbtn2").addEventListener("click", start);
+
+//     // Enter 키 이벤트
+//     document.addEventListener("keydown", function (event) {
+//         if (event.key === "Enter" && timerRunning) {
+//             enterCount++;
+//             updateEnterCountDisplay();
+//             const heartImage = document.querySelector(".heart");
+
+//             if (!heartImage) {
+//                 console.error("Error: .heart element not found.");
+//                 return;
+//             }
+
+//             // 이미지 확대
+//             heartImage.style.transform = "scale(1.2)";
+//             setTimeout(() => {
+//                 heartImage.style.transform = "scale(1)"; // 복귀
+//             }, 300);
+//         }
+//     });
+// });
+
+// function start() {
+//     let i = 60; // 60초 타이머
+//     enterCount = 0; // 카운트 초기화
+//     timerRunning = true; // 타이머 시작
+//     updateEnterCountDisplay();
+
+//     const elem = document.querySelector(".timerBar");
+//     if (!elem) {
+//         console.error("Error: .timerBar element not found.");
+//         return;
+//     }
+
+//     let width = 50; // 초기 폭 50vw
+//     elem.style.width = width + "vw"; // 초기 폭 설정
+
+//     const id = setInterval(frame, 1000);
+//     function frame() {
+//         if (i <= 0) {
+//             clearInterval(id); // 타이머 종료
+//             timerRunning = false; // 타이머 종료 상태
+//             alert(`시간 종료! Enter 키를 누른 횟수: ${enterCount}번`);
+//         } else {
+//             i--; // 초 감소
+//             width -= 50 / 60; // 매 초 폭 감소
+//             elem.style.width = width + "vw"; // 줄어드는 폭 설정
+//         }
+//     }
+// }
+
+// function updateEnterCountDisplay() {
+//     const display = document.getElementById("digit");
+//     if (display) {
+//         display.textContent = `Enter 키 횟수: ${enterCount}`;
+//     }let enterCount = 0; // Enter 키 누른 횟수
+let timerRunning = false; // 타이머 동작 여부
+let timerDuration = 60000; // 타이머 60초 (밀리초 단위)
+let timerId; // 타이머 ID
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Start 버튼 클릭 이벤트
+    document.querySelector(".startbtn2").addEventListener("click", start);
+
+    // Enter 키 이벤트
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" && timerRunning) {
+            enterCount++;
+            updateEnterCountDisplay();
+            updateEdInfo(); // ed_info 업데이트
+            const heartImage = document.querySelector(".heart");
+
+            if (heartImage) {
+                // 이미지 확대
+                heartImage.style.transform = "scale(1.2)";
+                setTimeout(() => {
+                    heartImage.style.transform = "scale(1)"; // 복귀
+                }, 300);
+            }
+        }
+    });
+});
+
+function start() {
+    enterCount = 0; // 카운트 초기화
+    updateEnterCountDisplay();
+    updateEdInfo(); // 초기화 시 ed_info 업데이트
+    timerRunning = true; // 타이머 시작
+
+    const elem = document.querySelector(".timerBar");
+    if (!elem) {
+        console.error("Error: .timerBar element not found.");
+        return;
+    }
+
+    let startTime = Date.now(); // 시작 시간 기록
+
+    // 타이머 바 초기화
+    elem.style.width = "50vw";
+
+    // 타이머 업데이트 함수
+    function updateTimer() {
+        const elapsed = Date.now() - startTime; // 경과 시간 계산
+        const remainingTime = Math.max(timerDuration - elapsed, 0); // 남은 시간
+
+        if (remainingTime <= 0) {
+            clearInterval(timerId); // 타이머 종료
+            timerRunning = false; // 타이머 비활성화
+            endGame(); // 게임 종료 처리
+            return;
+        }
+
+        // 타이머 바 업데이트
+        const width = (remainingTime / timerDuration) * 50; // 비율에 따른 폭 계산
+        elem.style.width = `${width}vw`;
+    }
+
+    // 100ms마다 타이머 업데이트
+    timerId = setInterval(updateTimer, 100);
+}
+
+function updateEnterCountDisplay() {
+    const display = document.getElementById("digit");
+    if (display) {
+        display.textContent = `${enterCount}`;
+    }
+}
+
+function updateEdInfo() {
+    const edInfo = document.querySelector('.ed_info .font_bold');
+    if (edInfo) {
+        edInfo.textContent = `${enterCount}회`; // enterCount 값을 업데이트
+    }
+}
+
+function endGame() {
+    const gameSection = document.querySelector('.game2-ing');
+    const edSection = document.querySelector('.ed1_1');
+    const endingSection = document.querySelector('.ending2');
+
+    if (gameSection) {
+        gameSection.style.display = 'none'; // 게임 섹션 숨기기
+    }
+
+    if (edSection) {
+        edSection.style.display = 'block'; // 결과 섹션 보이기
+    }
+
+    // ending2 섹션의 카운트 업데이트
+    const countDisplay = document.querySelector('.ending2 .count');
+    if (countDisplay) {
+        countDisplay.textContent = `${enterCount}회`; // ending2에 카운트 업데이트
+    }
+
+    // 3초 후에 ed1_1을 숨기고 ending2를 보이게 함
+    setTimeout(() => {
+        if (edSection) {
+            edSection.style.display = 'none'; // ed1_1 숨기기
+        }
+        if (endingSection) {
+            endingSection.style.display = 'block'; // ending2 보이기
+        }
+    }, 3000); // 3000ms = 3초
+}
+
+// START 버튼 클릭 시 화면 전환
+document.addEventListener('DOMContentLoaded', () => {
+    const startButton = document.querySelector('.startbtn2'); // 클래스 이름 수정
+    if (startButton) { // startButton이 null이 아닐 때만 이벤트 리스너 추가
+        startButton.addEventListener('click', function() {
+            const startSection2 = document.querySelector('.start2');
+            if (startSection2) { // startSection2가 null이 아닐 때만 클래스 추가 및 스타일 변경
+                startSection2.style.display = 'none';
+            }
+            const gameSection = document.querySelector('.game2-ing');
+            if (gameSection) { // gameSection이 null이 아닐 때만 스타일 변경
+                gameSection.style.display = 'block';
+            }
+        });
+    } else {
+        console.error('Error: .startbtn2 element not found.'); // 클래스 이름에 맞게 수정
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const restart2 = document.querySelector('.restart2');
+    restart2.addEventListener('click', function() {
+        // ending2 섹션 숨기기
+        const endingSection = document.querySelector('.ending2');
+        if (endingSection) {
+            endingSection.style.display = 'none';
+        }
+
+        // start2 섹션 보이기
+        const startSection2 = document.querySelector('.start2');
+        if (startSection2) {
+            startSection2.style.display = 'block';
+        }
+
+        // 게임 상태 초기화
+        resetGame();
+    });
+});
+
+function resetGame() {
+    enterCount = 0; // Enter 키 누른 횟수 초기화
+    timerRunning = false; // 타이머 비활성화
+    clearInterval(timerId); // 타이머 종료
+    const timerBar = document.querySelector('.timerBar');
+    if (timerBar) {
+        timerBar.style.width = '50vw'; // 타이머 바 초기화
+    }
+    updateEnterCountDisplay(); // 카운트 디스플레이 업데이트
+    updateEdInfo(); // ed_info 업데이트
+}
+
+
+
+
+
+// function endGame() {
+//     const gameSection = document.querySelector('.game2-ing');
+//     const edSection = document.querySelector('.ed1_1');
+//     const endingSection = document.querySelector('.ending2');
+
+//     if (gameSection) {
+//         gameSection.style.display = 'none'; // 게임 섹션 숨기기
+//     }
+
+//     if (edSection) {
+//         edSection.classList.add('fade-in'); // 결과 섹션 보이기
+//         edSection.style.display = 'block'; // 먼저 보이게 설정
+//         setTimeout(() => {
+//             edSection.classList.remove('fade-in'); // fade-in 클래스 제거
+//         }, 10); // 클래스가 적용되도록 약간의 지연 후 제거
+//     }
+
+//     // 3초 후에 ed1_1을 숨기고 ending2를 보이게 함
+//     setTimeout(() => {
+//         if (edSection) {
+//             edSection.classList.add('fade-out'); // ed1_1을 부드럽게 사라지게 함
+//             setTimeout(() => {
+//                 edSection.style.display = 'none'; // 완전히 사라진 후 display none
+//             }, 500); // fade-out 애니메이션 시간과 일치
+//         }
+//         if (endingSection) {
+//             endingSection.classList.add('fade-in'); // ending2를 부드럽게 나타나게 함
+//             endingSection.style.display = 'block'; // 먼저 보이게 설정
+//             setTimeout(() => {
+//                 endingSection.classList.remove('fade-in'); // fade-in 클래스 제거
+//             }, 10); // 클래스가 적용되도록 약간의 지연 후 제거
+//         }
+//     }, 3000); // 3000ms = 3초
+// }
