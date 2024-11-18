@@ -17,10 +17,12 @@
             <div class="nav-area"></div>
             <nav>
                 <ul class="gnb">
-                    <li><a href="https://nowblue.github.io/sadari/"><img src="./img/logo_2.png" alt="" class="logo"></a></li>
+                    <li><a href="https://nowblue.github.io/sadari/"><img src="./img/logo_2.png" alt="" class="logo"></a>
+                    </li>
                     <li>
                         <ul class="gnb_right">
-                            <li><a class="navMenu gnb_1" onclick="location.href='https://nowblue.github.io/sadari/'">Home</a></li>
+                            <li><a class="navMenu gnb_1"
+                                    onclick="location.href='https://nowblue.github.io/sadari/'">Home</a></li>
                             <li><a class="navMenu gnb_4"
                                     onclick="location.href='https://nowblue.github.io/sadari_game/' ">Game
                                 </a>
@@ -92,7 +94,7 @@
                                 </div>
                                 <img src="./img/cap_box.png" alt="" class="cap_box">
                             </div>
-                            
+
                         </article>
                     </article>
                     <article class="ending">
@@ -109,12 +111,64 @@
                     </article>
                 </article>
             </section>
-
-
-
-            <section class="game2">
-
-            </section>
         </main>
+
+
+        <section class="game2">
+            <section class="start2">
+                <article class="start2bg">
+                    <img src="./img/logo2.png" alt="" class="logo2">
+                    <p class="start-title">사다리 CPR 체험 게임</p>
+                    <p class="start-info">
+                        여러분은 심폐소생술 가슴압박을 분당 몇 번 해야 하는지 알고 계시나요?<br />
+                        사다리 CPR 게임을 통해 알아보아요!
+                    </p>
+                    <button class="startbtn2">START</button>
+                </article>
+            </section>
+            <section class="game2-ing">
+                <section class="game2-area">
+                    <section class="timer_section">
+                        <div class="timer">
+                            <div class="timerBar"></div>
+                        </div>
+                        <div id="digit">0</div>
+
+                        <!-- <div id="digit"></div> -->
+                        <!-- <button onclick="start()">시작하기</button> -->
+                    </section>
+
+                    <section class="game2-img-area">
+                        <img src="./img/CPR_heart 1.png" alt="" class="heart">
+                    </section>
+                </section>
+            </section>
+            <section class="ed1_1">
+                <img src="./img/logo2.png" alt="" class="logo3">
+                <div class="ed_container">
+                <p class="ed_info">
+                    심폐소생술 가슴압박을<br/>
+                    <span class="font_bold">0회</span><br/>
+                    실시하셨습니다
+                </p>
+                </div>
+            </section>
+            <section class="ending2">
+                <button class="restart2"><img src="./img/logo2.png" alt="" class="logo3"></button>
+                <div class="ending_container">
+                    <div class="countDiv">실시한 횟수: <span class="count">0회</span></div>
+                    <p class="ending_text">
+                        심폐소생술은<br/>
+                        <span class="font_bold">분당 100-120회</span>의 속도로<br/>
+                        <span class="font_bold">30회</span> 실시 해야합니다.
+                    </p>
+                    <p class="ending_info">
+                        심정지가 발생하면 그 순간부터 시간이 경과하면서 매 분마다 사망률이 증가합니다.<br/>
+                        5분 이상이 경과되면 뇌손상이 시작되고 10분 이상 경과되면 소생가능성이 희박해집니다.<br/>
+                        심정지가 발생하는 것을 목격한 사람이 심폐소생술을 즉시 실시하면 소생가능성을 2-3배 늘릴 수 있습니다.<br/>
+                    </p>
+                    </div>
+            </section>
+        </section>
     </div>
     <script src="./game.js"></script>
