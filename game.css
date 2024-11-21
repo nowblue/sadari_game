@@ -299,7 +299,7 @@ main{
     position: absolute;
     top: 2vw;
     left: 44vw;
-    width: 25vw;
+    width: 23vw;
     z-index: 2;
     image-rendering: pixelated;
 }
@@ -309,14 +309,14 @@ main{
     position: absolute;
     top: 2vw;
     left: 44vw;
-    width: 25vw;
+    width: 23vw;
     z-index: 3;
     image-rendering: pixelated;
 }
 
 .pole_a {
     position: absolute;
-    top: 18.3vw;
+    top: 16.3vw;
     left: 0vw;
     height: 21vw;
     z-index: 4;
@@ -326,7 +326,7 @@ main{
 .pole_b {
     display: none;
     position: absolute;
-    top: 18.3vw;
+    top: 16.3vw;
     left: 0vw;
     height: 21vw;
     z-index: 4;
@@ -336,8 +336,8 @@ main{
 
 .hole {
     position: absolute;
-    top: 27vw;
-    left: 30vw;
+    top: 26vw;
+    left: 28vw;
     width: 8vw;
     z-index: 1;
     image-rendering: pixelated;
@@ -362,13 +362,13 @@ main{
 } */
 
 .tree_b{
-    top: 6vw;
-    left: 15vw;
+    top: 5vw;
+    left: 14vw;
     width: 11vw;
 }
 
 .tree_c{
-    top: 6vw;
+    top: 5vw;
     left: 40vw;
     width: 11vw;
 }
@@ -381,13 +381,13 @@ main{
 } */
 
 .tree_e{
-    top: 16vw;
+    top: 15vw;
     left: 7vw;
     width: 7vw;
 }
 
 .tree_f{
-    top: 16vw;
+    top: 15vw;
     left:15vw;
     width: 7vw;
 }
@@ -578,7 +578,7 @@ main{
 .badge{
     position: absolute;
     top: 12vw;
-    left: 18vw;
+    left: 15vw;
     width: 36vw;
     image-rendering: pixelated;
     animation: badgeFly 1s 0.7s linear infinite alternate;
@@ -593,7 +593,7 @@ main{
     z-index: 3;
     text-align: center;
     top: 30vw;
-    left: 17vw;
+    left: 14vw;
     animation: EndOpacity 7s forwards;
 }
 
@@ -602,7 +602,7 @@ main{
     font-size: 1vw;
     font-family: "Galmuri9", sans-serif;
     top: 3.5vw;
-    left: 63vw;
+    left: 60vw;
     background: #ffffff00;
     width: 7vw;
     height: 3vw;
