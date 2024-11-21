@@ -578,7 +578,7 @@ main{
 .badge{
     position: absolute;
     top: 12vw;
-    left: 15vw;
+    left: 16vw;
     width: 31vw;
     image-rendering: pixelated;
     animation: badgeFly 1s 0.7s linear infinite alternate;
