@@ -702,16 +702,16 @@ main{
 .heart{
     margin: 3vw 0 0 -5vw;
     width: 23vw;
-    transition: transform 0.3s ease; /* 부드러운 스케일 변화 */
+    transition: transform 0.3s ease; 
 }
 
 
 .timer {
-    width: 50vw; /* 부모 컨테이너의 너비 */
-    height: 1vw; /* 타이머 바 높이 */
+    width: 50vw; 
+    height: 1vw; 
     background-color: #ffffff;
     position: relative;
-    margin: 3vw 0 2vw 0; /* 상단 여백 */
+    margin: 3vw 0 2vw 0; 
     border: #FF5F1F 0.2vw solid;
     border-radius: 1vw;
 }
