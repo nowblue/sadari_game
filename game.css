@@ -111,10 +111,10 @@ nav {
 
 /* main */
 main{
-    height: 52vw;
+    height: 48vw;
     overflow: hidden;
-    width: 68.3vw;
-    margin: 3.5vw 0 0 16vw;
+    width: 64.3vw;
+    margin: 3.5vw 0 0 17.5vw;
     display: inline-block;
     justify-items: center;
 }
@@ -170,8 +170,8 @@ main{
 .bg_color {
     position: absolute;
     /* margin: 3.3vw 0 0 4vw; */
-    width: 68vw;
-    height: 42.15vw;
+    width: 64vw;
+    height: 40.15vw;
     background-color: #fff;
     z-index: 0;
     border: 0.16vw solid #FF5F1F;
@@ -184,7 +184,7 @@ main{
 .infoIcon_a{
     position: absolute;
     top: 11.7vw;
-    left: 73vw;
+    left: 70vw;
     width: 3vw;
     image-rendering: pixelated;
 }
@@ -192,7 +192,7 @@ main{
 .infoIcon_b{
     position: absolute;
     top: 11.7vw;
-    left: 76.5vw;
+    left: 73.5vw;
     width: 3vw;
     image-rendering: pixelated;
 }
@@ -200,7 +200,7 @@ main{
 .infoIcon_c{
     position: absolute;
     top: 11.7vw;
-    left: 80vw;
+    left: 77vw;
     width: 3vw;
     image-rendering: pixelated;
 }
@@ -209,9 +209,9 @@ main{
     /* margin: 3.5vw 0 0 4vw; */
     position: relative;
     display: flex;
-    width: 68.3vw;
-    height: 38.3vw;
-    top: 4vw;
+    width: 64.14vw;
+    height: 36.3vw;
+    top: 4.15vw;
     overflow: hidden;
 }
 
@@ -222,20 +222,20 @@ main{
 
 .startBgImg{
     position: absolute;
-    width: 68.3vw;
+    width: 64.3vw;
     z-index: 0;
     image-rendering: pixelated;
 }
 
 .startBtn{
     position: absolute;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     font-family: "Galmuri9", sans-serif;
     top: 18vw;
-    left: 27vw;
+    left: 26vw;
     background: #fff;
-    width: 14vw;
-    height: 4vw;
+    width: 12vw;
+    height: 3.5vw;
     border-radius: 2vw;
     border-width: 0;
     z-index: 1;
@@ -256,7 +256,7 @@ main{
     z-index: 3;
     text-align: center;
     top: 25vw;
-    left: 16vw;
+    left: 15vw;
 }
 /* 
 .startBg{
@@ -290,16 +290,16 @@ main{
 
 .bg_img {
     position: absolute;
-    width: 68.3vw;
+    width: 65.3vw;
     z-index: 0;
     image-rendering: pixelated;
 }
 
 .building_a {
     position: absolute;
-    top: 2vw;
-    left: 44vw;
-    width: 23vw;
+    top: 3vw;
+    left: 42vw;
+    width: 20vw;
     z-index: 2;
     image-rendering: pixelated;
 }
@@ -307,9 +307,9 @@ main{
 .building_b{
     display: none;
     position: absolute;
-    top: 2vw;
-    left: 44vw;
-    width: 23vw;
+    top: 3vw;
+    left: 42vw;
+    width: 20vw;
     z-index: 3;
     image-rendering: pixelated;
 }
@@ -318,7 +318,7 @@ main{
     position: absolute;
     top: 16.3vw;
     left: 0vw;
-    height: 21vw;
+    height: 19vw;
     z-index: 4;
     image-rendering: pixelated;
 }
@@ -328,7 +328,7 @@ main{
     position: absolute;
     top: 16.3vw;
     left: 0vw;
-    height: 21vw;
+    height: 19vw;
     z-index: 4;
     image-rendering: pixelated;
 }
@@ -336,9 +336,9 @@ main{
 
 .hole {
     position: absolute;
-    top: 26vw;
-    left: 28vw;
-    width: 8vw;
+    top: 25vw;
+    left: 26vw;
+    width: 7vw;
     z-index: 1;
     image-rendering: pixelated;
 }
@@ -362,15 +362,15 @@ main{
 } */
 
 .tree_b{
-    top: 5vw;
+    top: 6vw;
     left: 14vw;
-    width: 11vw;
+    width: 9vw;
 }
 
 .tree_c{
-    top: 5vw;
-    left: 40vw;
-    width: 11vw;
+    top: 6vw;
+    left:38vw;
+    width: 9vw;
 }
 
 /* .tree_d{
@@ -382,77 +382,77 @@ main{
 
 .tree_e{
     top: 15vw;
-    left: 7vw;
-    width: 7vw;
+    left: 8vw;
+    width: 6vw;
 }
 
 .tree_f{
     top: 15vw;
     left:15vw;
-    width: 7vw;
+    width: 6vw;
 }
 
 .tree_g{
-    top: 31vw;
+    top: 29.5vw;
     left: 10vw;
-    width: 7vw;
+    width: 6vw;
 }
 
 .tree_h{
-    top: 31vw;
-    left: 18vw;
-    width: 7vw;
+    top: 29.5vw;
+    left: 17vw;
+    width: 6vw;
 }
 
 .tree_i{
-    top: 31vw;
-    left: 37vw;
-    width: 7vw;
+    top: 29.5vw;
+    left: 35vw;
+    width: 6vw;
 }
 
 .tree_j{
-    top: 31vw;
-    left: 45vw;
-    width: 7vw;
+    top: 29.5vw;
+    left: 42vw;
+    width: 6vw;
 }
 
 .tree_k{
-    top: 31vw;
-    left: 53vw;
-    width: 7vw;
+    top: 29.5vw;
+    left: 49vw;
+    width: 6vw;
 }
 
 .tree_l{
-    top: 31vw;
-    left: 61vw;
-    width: 7vw;
+    top: 29.5vw;
+    left: 56vw;
+    width: 6vw;
 }
 
 
 .char {
     position: absolute;
-    width: 6vw; 
-    height: 6vw; 
+    width: 5vw; 
+    height: 5vw; 
     background-color: transparent;
     top: 0;
    
     background: url("./img/character.png") no-repeat;
-    background-size: 24vw 24vw;  
+    background-size: 20vw 20vw;  
     z-index: 3;
     image-rendering: pixelated;
 
 }
 
 .char[data-direction='right'] {
-    background-position-y: -6vw; 
+    background-position-y: -5vw; 
 }
 
 .char[data-direction='up'] {
-    background-position-y: -12vw; 
+    background-position-y: -10vw; 
 }
 
 .char[data-direction='left'] {
-    background-position-y: -18vw; 
+    background-position-y: -15vw; 
 }
 
 .char[data-walking='true'] {
@@ -464,7 +464,7 @@ main{
         background-position-x: 0;
     }
     to {
-        background-position-x: -24vw;
+        background-position-x: -20vw;
     }
 }
 
@@ -541,7 +541,7 @@ main{
 
 .endBg{
     position: absolute;
-    width: 68.3vw;
+    width: 64.2vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -579,7 +579,7 @@ main{
     position: absolute;
     top: 12vw;
     left: 15vw;
-    width: 36vw;
+    width: 31vw;
     image-rendering: pixelated;
     animation: badgeFly 1s 0.7s linear infinite alternate;
 }
@@ -592,8 +592,8 @@ main{
     color: #000;
     z-index: 3;
     text-align: center;
-    top: 30vw;
-    left: 14vw;
+    top: 28vw;
+    left: 12vw;
     animation: EndOpacity 7s forwards;
 }
 
@@ -602,7 +602,7 @@ main{
     font-size: 1vw;
     font-family: "Galmuri9", sans-serif;
     top: 3.5vw;
-    left: 60vw;
+    left: 56vw;
     background: #ffffff00;
     width: 7vw;
     height: 3vw;
@@ -632,7 +632,7 @@ main{
 }
 
 .start2bg{
-    width: 68.3vw;
+    width: 64.3vw;
     height: 42.47vw;
     background: #FF5F1F;
     display: inline-flex;
@@ -641,32 +641,32 @@ main{
 }
 
 .logo2{
-    width: 5vw;
+    width: 4.5vw;
     margin: 6vw 0 3vw 0;
 }
 
 .start-title{
     color: #fff;
-    font-size: 5.5vw;
+    font-size: 5vw;
     font-weight: 900;
 }
 .start-info{
     margin: 4vw 0 3vw 0;
     text-align: center;
     color: #fff;
-    font-size: 1.45vw;
+    font-size: 1.4vw;
     font-weight: 600;
     line-height: 2.5vw;
 }
 
 .startbtn2{
-    width: 13vw;
-    height: 4.5vw;
+    width: 12vw;
+    height: 4vw;
     color: #FF5F1F;
     background: #fff;
     border: none;
     border-radius: 3vw;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: 800;
 }
 
@@ -691,7 +691,7 @@ main{
 }
 
 .game2-area{
-    width: 68.3vw;
+    width: 64.3vw;
     height: 42.47vw;
     background: #ffffff;
     display: inline-flex;
@@ -701,17 +701,17 @@ main{
 
 .heart{
     margin: 3vw 0 0 -5vw;
-    width: 23vw;
-    transition: transform 0.3s ease; /* 부드러운 스케일 변화 */
+    width: 20vw;
+    transition: transform 0.3s ease; 
 }
 
 
 .timer {
-    width: 50vw; /* 부모 컨테이너의 너비 */
-    height: 1vw; /* 타이머 바 높이 */
+    width: 50vw; 
+    height: 1vw; 
     background-color: #ffffff;
     position: relative;
-    margin: 3vw 0 2vw 0; /* 상단 여백 */
+    margin: 3vw 0 2vw 0; 
     border: #FF5F1F 0.2vw solid;
     border-radius: 1vw;
 }
@@ -728,8 +728,8 @@ main{
 
 #digit{
     position: absolute;
-    padding: 30vw 0 0 23vw;
-    font-size: 3vw;
+    padding: 28vw 0 0 23vw;
+    font-size: 2.8vw;
     font-weight: 800;
     color: #FF5F1F;
 }
@@ -742,14 +742,14 @@ main{
 
 .ed1_1{
     display: none;
-    width: 68.3vw;
+    width: 64.3vw;
     height: 42.47vw;
     background: #FF5F1F;
 
 }
 
 .ed_container{
-    width: 68.3vw;
+    width: 64.3vw;
     height: 42.47vw;
     display: inline-flex;
     flex-direction: column;
@@ -766,7 +766,7 @@ main{
 .ed_info{
     /* margin-top: 5vw; */
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 200;
     color: #ffffff;
     line-height: 6vw;
@@ -774,7 +774,7 @@ main{
 }
 
 .font_bold{
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 800;
     color: #ffffff;
     text-shadow: 0 0.2vw 0.5vw #00000061;
@@ -783,14 +783,14 @@ main{
 
 .ending2{
     display: none;
-    width: 68.3vw;
+    width: 64.3vw;
     height: 42.47vw;
     background: #FF5F1F;
 
 }
 
 .ending_container{
-    width: 68.3vw;
+    width: 64.3vw;
     height: 42.47vw;
     display: inline-flex;
     flex-direction: column;
@@ -800,7 +800,7 @@ main{
 
 .ending_text{
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: 200;
     color: #ffffff;
     line-height: 6vw;
@@ -808,9 +808,9 @@ main{
 }
 
 .ending_info{
-    margin-top: 3vw;
+    margin-top: 2vw;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: 200;
     line-height: 2vw;
     color: #ffffff;
@@ -837,7 +837,7 @@ main{
 
 svg{
     position: absolute;
-    width: 68.3vw ;
+    width: 64.3vw ;
     stroke-dasharray: 3000;
     stroke-dashoffset: -6000;
     animation: dash 4s cubic-bezier(0.43, 0.14, 0.5, 0.76) infinite;
