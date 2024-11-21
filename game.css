@@ -633,7 +633,7 @@ main{
 
 .start2bg{
     width: 68.3vw;
-    height: 42.4vw;
+    height: 42.7vw;
     background: #FF5F1F;
     display: inline-flex;
     flex-direction: column;
@@ -692,7 +692,7 @@ main{
 
 .game2-area{
     width: 68.3vw;
-    height: 42.4vw;
+    height: 42.7vw;
     background: #ffffff;
     display: inline-flex;
     flex-direction: column;
@@ -740,14 +740,14 @@ main{
 .ed1_1{
     display: none;
     width: 68.3vw;
-    height: 42.4vw;
+    height: 42.7vw;
     background: #FF5F1F;
 
 }
 
 .ed_container{
     width: 68.3vw;
-    height: 42.4vw;
+    height: 42.7vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -781,14 +781,14 @@ main{
 .ending2{
     display: none;
     width: 68.3vw;
-    height: 42.4vw;
+    height: 42.7vw;
     background: #FF5F1F;
 
 }
 
 .ending_container{
     width: 68.3vw;
-    height: 42.4vw;
+    height: 42.7vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
