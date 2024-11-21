@@ -110,29 +110,70 @@ nav {
 
 
 /* main */
-
 main{
+    overflow: hidden;
+    width: 68.3vw;
+    margin: 3.5vw 0 0 16vw;
+    display: grid;
+    justify-items: center;
+}
+
+.btn_area{
+    display: inline-flex;
+    margin: 2.5vw 0 2vw 0;
+    width: 20vw;
+    height: 3vw;
+    border: none;
+    border-radius: 2vw;
+    background: #68686814;
+}
+
+.gamebtn{
+    /* margin: 0 1vw; */
+    width: 10vw;
+    height: 3vw;
+    border: none;
+    border-radius: 2vw;
+    text-align: center;
+    line-height: 3vw;
+    background: transparent;
+    font-size: 1.2vw;
+    font-weight:700;
+    color: #ff5f1fbe;
+}
+
+.game1btn{
+    background: #FF5F1F;
+    color: #ffffff;
+}
+
+.game2btn{
+    background: transparent;
+    color: #ff5f1fbe;
+}
+
+
+.game1_area{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    margin-top: 6vw;
+    /* justify-content: center;
+    flex-direction: column; */
+    /* margin-top: 6vw; */
 }
 
-.game1{
-    margin-left: 10vw;
+/* .game1{
+    margin-left: 8vw;
     margin-top: -2vw;
-}
+} */
 
 
 .bg_color {
     position: absolute;
-    margin: 3.3vw 0 0 4vw;
-    width: 71.7vw;
-    height: 44.4vw;
+    /* margin: 3.3vw 0 0 4vw; */
+    width: 68vw;
+    height: 42.1vw;
     background-color: #fff;
     z-index: 0;
-    border: 0.16vw solid #3e5174;
+    border: 0.16vw solid #FF5F1F;
 }
 
 .top_icon{
@@ -164,11 +205,11 @@ main{
 }
 
 .moniter {
-    margin: 3.5vw 0 0 4vw;
+    /* margin: 3.5vw 0 0 4vw; */
     position: relative;
     display: flex;
-    width: 72vw;
-    height: 40.4vw;
+    width: 68.3vw;
+    height: 38.3vw;
     top: 4vw;
     overflow: hidden;
 }
@@ -180,7 +221,7 @@ main{
 
 .startBgImg{
     position: absolute;
-    width: 72vw;
+    width: 68.3vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -190,7 +231,7 @@ main{
     font-size: 1.6vw;
     font-family: "Galmuri9", sans-serif;
     top: 18vw;
-    left: 29vw;
+    left: 27vw;
     background: #fff;
     width: 14vw;
     height: 4vw;
@@ -214,7 +255,7 @@ main{
     z-index: 3;
     text-align: center;
     top: 25vw;
-    left: 19vw;
+    left: 16vw;
 }
 /* 
 .startBg{
@@ -248,7 +289,7 @@ main{
 
 .bg_img {
     position: absolute;
-    width: 72vw;
+    width: 68.3vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -339,50 +380,50 @@ main{
 } */
 
 .tree_e{
-    top: 17vw;
+    top: 16vw;
     left: 7vw;
     width: 7vw;
 }
 
 .tree_f{
-    top: 17vw;
+    top: 16vw;
     left:15vw;
     width: 7vw;
 }
 
 .tree_g{
-    top: 32vw;
+    top: 31vw;
     left: 10vw;
     width: 7vw;
 }
 
 .tree_h{
-    top: 32vw;
+    top: 31vw;
     left: 18vw;
     width: 7vw;
 }
 
 .tree_i{
-    top: 32vw;
-    left: 40vw;
+    top: 31vw;
+    left: 37vw;
     width: 7vw;
 }
 
 .tree_j{
-    top: 32vw;
-    left: 48vw;
+    top: 31vw;
+    left: 45vw;
     width: 7vw;
 }
 
 .tree_k{
-    top: 32vw;
-    left: 56vw;
+    top: 31vw;
+    left: 53vw;
     width: 7vw;
 }
 
 .tree_l{
-    top: 32vw;
-    left: 64vw;
+    top: 31vw;
+    left: 61vw;
     width: 7vw;
 }
 
@@ -499,7 +540,7 @@ main{
 
 .endBg{
     position: absolute;
-    width: 72vw;
+    width: 68.3vw;
     z-index: 0;
     image-rendering: pixelated;
 }
@@ -585,12 +626,13 @@ main{
 
 /* game2 */
 .game2{
-    margin: 10vw 0 5vw 14vw;
+    margin: 0vw 0 5vw 0vw;
+    display: none;
 }
 
 .start2bg{
-    width: 72vw;
-    height: 44.4vw;
+    width: 68.3vw;
+    height: 42.1vw;
     background: #FF5F1F;
     display: inline-flex;
     flex-direction: column;
@@ -648,8 +690,8 @@ main{
 }
 
 .game2-area{
-    width: 72vw;
-    height: 44.4vw;
+    width: 68.3vw;
+    height: 44.74vw;
     background: #ffffff;
     display: inline-flex;
     flex-direction: column;
@@ -699,15 +741,15 @@ main{
 
 .ed1_1{
     display: none;
-    width: 72vw;
-    height: 44.4vw;
+    width: 68.3vw;
+    height: 44.74vw;
     background: #FF5F1F;
 
 }
 
 .ed_container{
-    width: 72vw;
-    height: 44.4vw;
+    width: 68.3vw;
+    height: 44.74vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -740,15 +782,15 @@ main{
 
 .ending2{
     display: none;
-    width: 72vw;
-    height: 44.4vw;
+    width: 68.3vw;
+    height: 44.74vw;
     background: #FF5F1F;
 
 }
 
 .ending_container{
-    width: 72vw;
-    height: 44.4vw;
+    width: 68.3vw;
+    height: 44.74vw;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -792,20 +834,26 @@ main{
     font-weight: 600;
 }
 
-/* .fade {
-    opacity: 0;
-    transition: opacity 0.5s ease;
+svg{
+    position: absolute;
+    width: 68.3vw ;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: -6000;
+    animation: dash 4s cubic-bezier(0.43, 0.14, 0.5, 0.76) infinite;
 }
 
-.fade-in {
-    opacity: 1;
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -6000;
+    }
 }
 
-.fade-out {
-    opacity: 0; 
-} */
 
-.restart{
-    background: transparent;
-    border: none;
-}
+
+
+
+
