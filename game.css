@@ -111,10 +111,11 @@ nav {
 
 /* main */
 main{
+    height: 52vw;
     overflow: hidden;
     width: 68.3vw;
     margin: 3.5vw 0 0 16vw;
-    display: grid;
+    display: inline-block;
     justify-items: center;
 }
 
@@ -182,24 +183,24 @@ main{
 
 .infoIcon_a{
     position: absolute;
-    top: 8vw;
-    left: 74vw;
+    top: 11.7vw;
+    left: 73vw;
     width: 3vw;
     image-rendering: pixelated;
 }
 
 .infoIcon_b{
     position: absolute;
-    top: 8vw;
-    left: 77.5vw;
+    top: 11.7vw;
+    left: 76.5vw;
     width: 3vw;
     image-rendering: pixelated;
 }
 
 .infoIcon_c{
     position: absolute;
-    top: 8vw;
-    left: 81vw;
+    top: 11.7vw;
+    left: 80vw;
     width: 3vw;
     image-rendering: pixelated;
 }
