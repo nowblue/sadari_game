@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const Ending = document.querySelector('.ending')
     const restart = document.querySelector('.restart')
 
-    let initialX = 33.5;
+    let initialX = 28.5;
     let initialY = 0;
     let currentX = initialX;
     let currentY = initialY;
@@ -509,3 +509,64 @@ function resetGame() {
 //         }
 //     }, 3000); // 3000ms = 3초
 // }
+
+
+
+
+var slidenow = 1;
+const nextbtn = document.querySelector('.next')
+
+//   $('.next').on('click', function(){
+//     if (slidenow == 1) {
+//       $('.slide-container').css('transform', 'translateX(-72vw)');
+//       slidenow += 1;
+//     } 
+//     else if (slidenow == 2){
+//       $('.slide-container').css('transform', 'translateX(72vw)');
+//       slidenow += 1;
+//     }
+//   })
+
+
+
+//슬라이더 만드려고 했는데 실패!
+//   document.addEventListener('DOMContentLoaded', () => {
+//     nextbtn.addEventListener('click', function(){
+//         if (slidenow == 1) {
+//             document.querySelector('.slide-container').style.transform='translateX(-72vw)';
+//             slidenow += 1;
+//           } 
+//           else if (slidenow == 2){
+//             document.querySelector('.slide-container').style.transform= 'translateX(0vw)';
+//             slidenow += 1;
+//           }
+//     })
+
+//   })
+
+
+//   restart.addEventListener('click', function() {
+
+document.addEventListener('DOMContentLoaded',()=>{
+    const game1 = document.querySelector('.game1_area')
+    const game2 = document.querySelector('.game2')
+    const game1btn = document.querySelector('.game1btn')
+    const game2btn = document.querySelector('.game2btn')
+
+    game1btn.addEventListener('click', function() {
+        game1.style.display = 'block';
+        game2.style.display = 'none';
+        game1btn.style.background='#ff5f1f'
+        game1btn.style.color = '#ffffff'
+        game2btn.style.background='transparent'
+        game2btn.style.color = '#ff5f1fbe'
+    });
+    game2btn.addEventListener('click', function(){
+        game1.style.display = 'none';
+        game2.style.display = 'block';
+        game1btn.style.background='transparent'
+        game1btn.style.color = '#ff5f1fbe'
+        game2btn.style.background='#ff5f1f'
+        game2btn.style.color = '#ffffff'
+    })
+})
