@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // });
 
 // function start() {
-//     let i = 60; // 60초 타이머
+//     let i = 30; // 60초 타이머
 //     enterCount = 0; // 카운트 초기화
 //     timerRunning = true; // 타이머 시작
 //     updateEnterCountDisplay();
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //             alert(`시간 종료! Enter 키를 누른 횟수: ${enterCount}번`);
 //         } else {
 //             i--; // 초 감소
-//             width -= 50 / 60; // 매 초 폭 감소
+//             width -= 50 / 30; // 매 초 폭 감소
 //             elem.style.width = width + "vw"; // 줄어드는 폭 설정
 //         }
 //     }
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //         display.textContent = `Enter 키 횟수: ${enterCount}`;
 //     }let enterCount = 0; // Enter 키 누른 횟수
 let timerRunning = false; // 타이머 동작 여부
-let timerDuration = 60000; // 타이머 60초 (밀리초 단위)
+let timerDuration = 30000; // 타이머 60초 (밀리초 단위)
 let timerId; // 타이머 ID
 
 document.addEventListener("DOMContentLoaded", function () {
