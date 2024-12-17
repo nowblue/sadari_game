@@ -155,16 +155,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentDirection = character.dataset.direction;
 
         if (event.key === 'ArrowLeft') {
-            newX -= 1.5;
+            newX -= 3;
             currentDirection = 'left';
         } else if (event.key === 'ArrowRight') {
-            newX += 1.5;
+            newX += 3;
             currentDirection = 'right';
         } else if (event.key === 'ArrowUp') {
-            newY -= 1.5;
+            newY -= 3;
             currentDirection = 'up';
         } else if (event.key === 'ArrowDown') {
-            newY += 1.5;
+            newY += 3;
             currentDirection = 'down';
         }
 
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //         display.textContent = `Enter 키 횟수: ${enterCount}`;
 //     }let enterCount = 0; // Enter 키 누른 횟수
 let timerRunning = false; // 타이머 동작 여부
-let timerDuration = 30000; // 타이머 60초 (밀리초 단위)
+let timerDuration = 15000; // 타이머 60초 (밀리초 단위)
 let timerId; // 타이머 ID
 
 document.addEventListener("DOMContentLoaded", function () {
