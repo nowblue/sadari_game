@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //         display.textContent = `Enter 키 횟수: ${enterCount}`;
 //     }let enterCount = 0; // Enter 키 누른 횟수
 let timerRunning = false; // 타이머 동작 여부
-let timerDuration = 15000; // 타이머 60초 (밀리초 단위)
+let timerDuration = 10000; // 타이머 60초 (밀리초 단위)
 let timerId; // 타이머 ID
 
 document.addEventListener("DOMContentLoaded", function () {
